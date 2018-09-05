@@ -1,0 +1,1 @@
+{"jobID":"5e641b37-8fba-c094-f6a6-00462c069688","spec":{"type":"policy","cause":{"Message":"","User":""},"spec":{"default:deployment/hasher":{"add":{"automated":"true"},"remove":{}}}},"result":null}
