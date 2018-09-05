@@ -1,0 +1,1 @@
+{"jobID":"414652dc-1cd9-2980-7ae9-acedc6624253","spec":{"type":"policy","cause":{"Message":"","User":""},"spec":{"default:deployment/redis":{"add":{"automated":"true"},"remove":{}}}},"result":null}
