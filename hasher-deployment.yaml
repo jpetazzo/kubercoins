@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
-    run: hasher
+    app: hasher
   name: hasher
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: hasher
-  strategy: {}
+      app: hasher
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        run: hasher
+        app: hasher
     spec:
       containers:
       - image: dockercoins/hasher:v0.1
         name: hasher
-        resources: {}
-status: {}

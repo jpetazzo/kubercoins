@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    run: rng
+    app: rng
   name: rng
 spec:
   ports:
@@ -10,5 +10,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    run: rng
+    app: rng
   type: ClusterIP

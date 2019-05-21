@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
-    run: worker
+    app: worker
   name: worker
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: worker
-  strategy: {}
+      app: worker
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        run: worker
+        app: worker
     spec:
       containers:
       - image: dockercoins/worker:v0.1
         name: worker
-        resources: {}
-status: {}

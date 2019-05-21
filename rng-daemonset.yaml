@@ -2,16 +2,16 @@ apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   labels:
-    run: rng
+    app: rng
   name: rng
 spec:
   selector:
     matchLabels:
-      run: rng
+      app: rng
   template:
     metadata:
       labels:
-        run: rng
+        app: rng
     spec:
       containers:
       - image: dockercoins/rng:v0.1
