@@ -1,10 +1,11 @@
-apiVersion: extensions/v1beta1
-kind: DaemonSet
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   labels:
     app: rng
   name: rng
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: rng
