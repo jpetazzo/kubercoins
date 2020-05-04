@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
 - hasher-deployment.yaml
 - hasher-service.yaml
-- kustomization.yaml
 - redis-deployment.yaml
 - redis-service.yaml
 - rng-deployment.yaml
