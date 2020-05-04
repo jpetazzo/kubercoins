@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- hasher-deployment.yaml
+- hasher-service.yaml
+- kustomization.yaml
+- redis-deployment.yaml
+- redis-service.yaml
+- rng-deployment.yaml
+- rng-service.yaml
+- webui-deployment.yaml
+- webui-service.yaml
+- worker-deployment.yaml
